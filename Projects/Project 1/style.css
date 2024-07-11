@@ -1,0 +1,176 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+*{
+    
+     font-family: "Comfortaa", sans-serif;
+     font-optical-sizing: auto;
+     /* font-weight: <weight>;
+     font-style: normal; */
+
+    margin: 0%;
+    padding: 0%;
+}
+ul{
+    display: flex;
+    font-size: 13px;
+    justify-content: end;
+    margin-right: 100px;
+    
+}
+
+li{
+    display: inline;
+    flex-direction: row;
+    color: rgba(0, 0, 0, 0.774);
+    margin: 10px;
+    padding: 5px;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(247, 132, 0);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.nav{
+    display: flex;
+    background-color: rgba(225, 225, 225, 0.502);
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+.logo{
+    /* background-color: chartreuse; */
+    margin-left: 90px;
+    font-size: 14px;
+    font-style: bold;  
+}
+
+.hero{
+    /* background-color: aqua; */
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    text-align: center;
+
+    /* background-color: rgb(111, 0, 0); */
+    /* background-image: url(/hero\ image.png); */
+    /* background-image: url(/Default_generate_image_like_this_0.jpg); */
+    background-image: url(hero\ image.png);
+    /* rgb(225, 225, 225); */
+    background-position:center;
+
+
+}
+h3{
+    font-size: 40px;
+    /* background-color: antiquewhite; */
+    margin-top: 50px;
+
+}
+
+p{
+    /* background-color: blue; */
+    width: 500px;
+    margin-top: 10px;
+    font-size: 12px;
+}
+.hbtn{
+    background-color: rgba(255, 147, 70, 0.854);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 12px;
+    margin-top: 25px;
+}
+
+.hbtn:hover{
+    background-color: rgb(255, 207, 148);
+    color: black;
+}
+.about{
+    background-color: rgb(0, 56, 130);
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "n n"
+    "c c1"
+    "i l";
+}
+@media only screen and (max-width:800px){
+    .about{
+        background-color: rgb(0, 56, 130);
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "n"
+        "n"
+        "c"
+        "c1"
+        "i"
+        "l";
+        gap: 50px;
+        margin-left: 0%;
+    }
+}
+.ah1{
+    /* background-color: antiquewhite; */
+    grid-area: n;
+    color: rgb(247, 132, 0);
+    font-size: 14px;
+    margin-top: 90px;
+    margin-left: 90px;
+}
+.ah2{
+    /* background-color: rgb(91, 55, 8); */
+    grid-area: c;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    width: 400px;
+    margin-left: 90px;
+}
+.aimg{
+    background-color: rgb(0, 0, 0);
+    grid-area: i;
+    color: rgb(139, 139, 139);
+    mask-image: url(/about_4.jpg.webp);
+    /* mask-position: center; */
+    height: 350px;
+    width: 500px;
+    margin-left: 90px;
+    margin-top: 10%;
+    position: relative;
+}
+.ap{
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(247, 247, 247);
+    grid-area: c1;
+    margin-left: 80px;
+    
+}
+.apc{
+    width: 400px;
+}
+.hline{
+    background-color: rgb(255, 145, 0);
+    color: rgb(247, 247, 247);
+    grid-area: l;
+    height: 320px;
+    width: 2px;
+    margin-left: 100px;
+    margin-top: 5%;
+    position: relative;
+    z-index: 2;
+}
